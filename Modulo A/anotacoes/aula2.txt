@@ -1,0 +1,13 @@
+Java vs JavaScript
+
+--> JAVA:
+* usado para ocnstruir aplicações que são executadas em um ambiente de maquina virtual que permite portabilidade entr diferentes s.o
+* linguagem compilada, que requer verificação de erros antes de ser executada
+* desenvolve aplicações seguras
+--> JAVASCRIPT
+* usado para tornar as páginas da web mais interativas e dinâmicas, além de ter capacidades de desenvolvimento no lado do servidor.
+* linguagem interpretada, o que significa que os scripts são lidos e executados quase instantaneamente pelo navegador.
+
+
+ECMAScript o qué? 
+--> versao padronizado do javasript

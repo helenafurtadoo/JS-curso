@@ -1,0 +1,15 @@
+1- diferenca entre um cliente e um servidor para a intert:
+cliente -> usuario que solicita as informações
+servidor -> maquinas de alta performance que fornecem os dados que sao usados pela internet
+
+2- para que serve html, css e js?
+html --> conteudo do site
+css --> desing do site
+js --> interações do site
+
+
+3- exemplo de 4 sites que fazem uso de JS
+* youtube
+* twitch
+* linkedin
+* netflix
