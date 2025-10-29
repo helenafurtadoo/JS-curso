@@ -1,7 +1,7 @@
 Java vs JavaScript
 
 --> JAVA:
-* usado para ocnstruir aplicações que são executadas em um ambiente de maquina virtual que permite portabilidade entr diferentes s.o
+* usado para construir aplicações que são executadas em um ambiente de maquina virtual que permite portabilidade entr diferentes s.o
 * linguagem compilada, que requer verificação de erros antes de ser executada
 * desenvolve aplicações seguras
 --> JAVASCRIPT

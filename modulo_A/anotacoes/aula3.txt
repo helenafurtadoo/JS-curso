@@ -1,0 +1,8 @@
+bibliografia:
+--> JavaScript o guia definitivo 
+--> JavaScirpt gui do programador 
+
+guias de referencia:
+--> developer mozila org
+
+node.JS --> vai ser usado para facilitar rodar o js fora do navegador 

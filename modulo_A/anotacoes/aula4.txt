@@ -1,0 +1,19 @@
+
+Algumas tags do html
+
+title --> titulo do site
+
+<head><head> --> configuracoes do site
+*style do CSS---
+        window.alert('Testando alertaaa uhul!')
+        window.confirm("Confirmacao do alerta")
+        window.prompt('Pedir para escrever')
+
+<body><body> --> corpo do site
+
+<h1><h1> --> Titulo
+
+<p><p> --> paragrafo
+
+javScirpt 
+* antes de fechar o body
