@@ -1,0 +1,38 @@
+comentarios no js
+
+// --> uma unica linha
+
+/*  */ --> mais de uma linha de codigo
+
+
+--> variavel - serve para guardar dados (cada uma recebe como nome de "identificador")
+
+tipos de dados:
+----typeof (para consultar qual o tipo de dado é aql variavel)------
+- number 
+    - infinity
+    - NaN (not a number)
+- string ("")
+- boolean -- true/false
+-------------outros tipos (serao vistos dps)------------------
+-null (considerado object tb)
+- undefined
+- object ([]) ({})
+    -Array (vetor)
+- function
+
+* podem começar com letra, $ ou _
+
+* é possivel usar letras ou numeros
+
+* é possivel usar acentos e simbolos
+
+* nao podem conter espaços
+
+* nao podem ser palavras reservadas 
+
+
+
+"null" : algo que nao recebe nada
+
+"=" é lido como: recebe 
