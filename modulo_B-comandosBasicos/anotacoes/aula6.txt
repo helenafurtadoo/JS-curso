@@ -1,0 +1,82 @@
+--------Manipulação de dados--------
+
+tipos primitivos a serem vistos nessa aula:
+* number
+
+*string
+
+
+ --> + serve para concatenação --> stirng + string
+
+--> + serve para adicao --> number  + number
+
+
+exemplo: 
+        <script> // isso é um comentario em js
+        var n1 = window.prompt("Digite um numero.") //string
+        var n2 = window.prompt("Digite o outro numero") // string
+
+        //somar ambas as variaveis
+        var soma = n1 + n2
+        var mostrarSoma = window.alert("A soma dos valores é: " + soma)
+        <script>
+        --- explicação: Aqui, se colocar como n1 = 2, n2 = 2, a soma vai mostrar "22" e nao "4". Pq ambas as variaveis estao como string
+
+        * por isso, aqui é necessario CONVERSÃO, ja que a variavel é criada como string, mas que responder como number para fazer a soma
+
+        - conversao STRING --> NUMBER (pode ser feito direto na variavel, )
+            Number.parseInt(n) - quando forem numeros inteiros
+
+            Number.parseFloat(n) - quando forem numeros com virgula (ex: 5.5)
+
+            Number(n) - para que o js interprete de acordo com o que for digitado, e entender se é inteiro ou com virgula, para fazer a operação
+
+        - conversao NUMBER --> STRING
+            String(n) - (n --> o que quer ser convertido para string)
+
+            n.toString() - (n --> o que quer converte)
+
+------formatação de strings-----
+
+--> document.write()- para escrever na tela
+
+        document.write(... ${variavel.toUpperCase()}) - serve para mostrar a variavel toda em maiusculas
+
+        document.write(... ${variavel.toLowerCase()}) - serve para mostrar a variavel toda em letras minusculas
+
+
+--> nome.length - mostrar o tamanho (quantas letras) tem o que foi escrito no prompt de cima
+    </script>
+
+
+var nome = 'gustavo'
+
+var idade = 41
+
+var nota = 5.5
+
+`Eu ${nome} tenho ${anos} anos, e tirei ${nota} pontos na prova´
+
+- nao sao aspas, sao CRASES  
+
+
+------formatação de numeros-----
+* no node.js
+
+--> variavel.toFixed(n) - para escolher ate quantas casas decimais quer mostrar.
+        n = casa decimais desejadas
+EXEMPLO
+var n1 = 134.5
+
+n1.toFixed(2)
+
+-- resultado: 134.50
+
+--> variavel.toFixed(2).replace('.' , ',')   - para trocar o ponto por uma virgula
+
+
+--> variavel.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
+
+        * toLocaleString('pt-BR',...) - localizar uma string para o brasil
+        
+        *  {style: 'currency', currency: 'BRL'} - currency = dinheiro , BRL = em real
