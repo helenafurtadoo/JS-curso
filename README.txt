@@ -1,4 +1,4 @@
-modulo A --> conhecendo o js
+modulo A --> Conhecendo o js
 * o que é capaz de fazer?
 
 * dicas de aprendizagem
@@ -10,7 +10,13 @@ modulo A --> conhecendo o js
 * primeiros scripts em JS
 
 
-modulo B --> 
+modulo B --> Comandos básicos do js
+* como armazenar dados
+
+* tratamento de dados (converter quando necessarios)
+
+* operacoes com dados (aritimetica, logica, relacional)
+
 
 modulo C -->
 
