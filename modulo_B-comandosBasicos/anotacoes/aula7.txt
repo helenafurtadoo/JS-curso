@@ -1,0 +1,80 @@
+--> algumas perguntas sobre a aula passada...
+1- como é possivel guardar o valor de um prompt dentro de uma variavel?
+
+variavel = window.prompt("O que você quer guardar aqui?)
+mostrar_variavel = window.alert("O que voce escreveu foi: ${variavel} ?")
+
+
+2- como fazer com que um numero digitado em um prompt() possa ser usado em calculos?
+
+numero = Number(window.prompt("Digite um numero:))
+numero2 = Number(window.prompt("Digite um  segundonumero:))
+
+var somar = numero + numero2
+resultado = window.alert(O resultado da soma foi: ${somar})
+
+3- como transormar um texto todo para letras maiusculas? em um so comando
+
+var texto = window.prompt("digite algo:")
+window.alert(texto,toUpeerCase())
+
+4- como mostrar um numero fromatado como um valor monetario?
+--> mostrar em real (R$) (NO NODE)
+-----como é no node, para criar a variavel, nao precisa de "window.prompt", apenas dar o valor a ela 
+
+
+dollar = window.prompt("Digite o seu valor (com apenas numeros)")
+reais.toLocaleString('pt-BR', {style: 'currency' , currency: 'BRL'} )
+
+--> mostrar em dollar
+doolar = window.prompt("digite o seu valor (com apenas numeros))
+dolar.toLocaleString('pt-BR' , {style: 'currency', currency: 'USD'})
+---------------------------------------------------------------------------------------------------------------------------
+
+
+---------OPERADORES DO JS--------
+--> nessa aula:
+
+* aritiméticos - usados para fazer cálculo
+
++ --> +
+
+- --> -
+
+x --> *
+
+divisao real --> /
+
+resto  da divisao inteira--> %
+
+potencia --> ** 4 (potencia de 4)
+
+
+obs: cuidado com procedênencia de operadores = fazer primeiro a operacao que tem prioridade ( *, /, %) e dps (+ , -)
+-- para mudar a ordem, usar parenteses
+-------------------------------------------------ORDEM DE PRECEDÊNCIA-------------------------------------------------
+()
+
+**
+
+* | / | %
+
++ | -
+
+* atribuição
+
+var n = 3
+
+n = n + 5      --> 3 + 5 ---> n = 8
+    simplificando:
+        n += 5 | n -= 5 | n *= 5 | n /= 5 | n **= 5 | n %= 5
+- incremento
+var x = 5
+x = x + 1 ---> x ++
+adciona UM no valor da variavel
+--> na proxima aula:
+*relacionais
+
+*logicos
+
+*ternario

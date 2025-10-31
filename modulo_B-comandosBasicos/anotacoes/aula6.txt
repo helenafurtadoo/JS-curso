@@ -37,13 +37,14 @@ exemplo:
             n.toString() - (n --> o que quer converte)
 
 ------formatação de strings-----
+      var texto = window.prompt("Digite algo:")
 
+        window.alert(texto.toUpperCase())
 --> document.write()- para escrever na tela
 
-        document.write(... ${variavel.toUpperCase()}) - serve para mostrar a variavel toda em maiusculas
+        window.alert(...variavel.toUpperCase()) - serve para mostrar a variavel toda em maiusculas
 
-        document.write(... ${variavel.toLowerCase()}) - serve para mostrar a variavel toda em letras minusculas
-
+        window.alert(... variavel.toLowerCase()) - serve para mostrar a variavel toda em letras minusculas
 
 --> nome.length - mostrar o tamanho (quantas letras) tem o que foi escrito no prompt de cima
     </script>
