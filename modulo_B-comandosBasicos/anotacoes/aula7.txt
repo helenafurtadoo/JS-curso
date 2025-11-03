@@ -32,7 +32,7 @@ dolar.toLocaleString('pt-BR' , {style: 'currency', currency: 'USD'})
 ---------------------------------------------------------------------------------------------------------------------------
 
 
----------OPERADORES DO JS--------
+---------OPERADORES DO JS parte 1--------
 --> nessa aula:
 
 * aritiméticos - usados para fazer cálculo

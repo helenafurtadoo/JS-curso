@@ -18,7 +18,12 @@ modulo B --> Comandos básicos do js
 * operacoes com dados (aritimetica, logica, relacional)
 
 
-modulo C -->
+modulo C --> Entendendo o DOM
+* o que é o Document Object Model 
+
+* Árvore DOM
+
+* Manipulando DOM
 
 modulo D -->
 
