@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EVENTOS DOM</title>
+    <style>
+        /* CSS */
+        body {
+            background-color : black ;
+        }
+        div#area {
+            font : normal 30pt Arial ; 
+            background: green ;
+            color: rgb(255, 255, 255) ;
+            width: 900px ;/*largura*/
+            height: 500px ; /*altura*/
+            /*para alinhar o texto*/
+            line-height : 500px ; 
+            text-align : center
+        }
+        /* CSS */
+    </style>
+</head>
+<body>
+    <!--HTML--> 
+    <!--eventos DOM dentro do html-->
+
+    <div id="area"
+        Passe o mouse aqui
+    </div>
+     <!--HTML-->
+
+     <script>
+    //JS
+    //eventos DOM dentro do JS
+
+        var a = window.document.getElementById('area') //nao é a melhor forma botar variavel fora das funcoes,para a mesma fincionar em todas. Mas depois sera caprendido da forma correta
+        a.addEventListener('click', clicar)
+        a.addEventListener('mouseenter', entrar)
+        a.addEventListener('mouseout', sair)
+
+        function clicar() { //tudo aqui dentro, so sera executado quando chamar o clicar()
+
+            a.innerText = 'Clicou! Agora saia com o mouse'
+            a.style.background = 'blue'
+        }
+
+        function entrar() {
+
+            a.innerText = 'Entrou! Agora clique aqui'
+            a.style.background = 'purple'
+        }
+
+        function sair() {
+            a.innerText = 'Saiu!'
+            a.style.background = 'green'
+        }
+    //JS
+     </script>
+</body>
+</html>

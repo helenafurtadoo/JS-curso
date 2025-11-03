@@ -1,0 +1,61 @@
+1- O que significa a sigla DOM?
+
+Document object model
+
+2- O que sao os elementos Parent e os elementos Child em uma avore DOM?
+
+elemento Parent, seria o elemento 'pai' da arvore, e o Child o 'filho', aquele que herda, que esta dentro do parent
+
+3- quais sao os 5 principais metodos de selecionar elementos DOM dentro do JS?
+- name
+- class
+- id
+- tagName
+- querySelector
+
+---------EVENTOS DOM---------
+* podem ser configurados direto no HTML(dentro de divs) ou no JS
+
+-- HTML ex:
+<div id = 'area' onclick = "clicar()" onmouseenter="entrar()" onmouseout="sair()">
+
+ var a = window.document.getElementById('area') 
+ 
+        function clicar() { //tudo aqui dentro, so sera executado quando chamar o clicar()
+
+            a.innerText = 'Clicou! Agora saia com o mouse'
+            a.style.background = 'blue'
+        }
+
+-- JS exemplo:
+ var a = window.document.getElementById('area')
+        a.addEventListener('click', clicar)
+    
+
+        function clicar() { //tudo aqui dentro, so sera executado quando chamar o clicar()
+
+            a.innerText = 'Clicou! Agora saia com o mouse'
+            a.style.background = 'blue'
+        }
+
+alguns eventos de mouse: ('procurar JavaSript DOM events' para documentacao)
+- se temos por exemplo uma <div> , os eventos sao tudo aquilo pode acontecer com aquela div
+
+* mouseenter (mouse 'entrou' na div)
+
+* mousemove (movendo o mouse dentro da div)
+
+* mousedown (pressiona com o mouse na div)
+
+* mouseup (o movimento de soltar o botao apertado do mouse)
+
+* click (apertar e soltar rapidamente o mouse)
+
+* mouseout (quando tira o cursor do mouse de dentro da div)
+
+-----FUNCOES-----
+
+function ação(parametro *opcional*){
+    bloco
+}
+

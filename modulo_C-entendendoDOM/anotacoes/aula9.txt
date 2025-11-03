@@ -5,7 +5,7 @@
 ---> o que é o DOM (document object model)
 * conjunto de objetos dentro do navegador que da acesso ao componentes internos do website
 
-*arvore DOM
+* arvore DOM
 window - objeto (janela do navegador)
             location - 
             document - 
