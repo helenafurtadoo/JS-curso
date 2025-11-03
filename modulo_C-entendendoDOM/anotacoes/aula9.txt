@@ -1,0 +1,88 @@
+-- instalar programas no vscode e no google
+-- live server (para ver as atualizacoes em tempo real do site quando apertar "ctrl + shift + p" e procuoar por open with live server)
+-- node Exec JS (  habilita para rodar o codigo js aprtando F8)
+
+---> o que é o DOM (document object model)
+* conjunto de objetos dentro do navegador que da acesso ao componentes internos do website
+
+*arvore DOM
+window - objeto (janela do navegador)
+            location - 
+            document - 
+                    html - 
+                        head-
+                        body-
+            history - de onde vc veio, para onde voce vai....
+
+
+------SELECIONANDO ELEMENTOS POR:-------
+
+--------Marca (tag)--------
+comando:
+
+getElementsByTagName() 
+
+--> window.document.write("Ola mundo") 
+
+        * adcionando componentes
+            --> window.document.write(window.document.charset)4
+                    * mostra no site algumas configuracoes da pagina (ex:UTF-8) 
+-->  var p1 = window.document.getElementsByTagName('p')[1] 
+
+        * seleciona a primeira tag <p>, ja que tem mias de 1
+        
+--> window.document.write("Replicando a tag p1 :  " + p1.innerText) 
+
+        * retorna na tela, o texto de p1 (pega apenas o texto, se tiver strong do html, ele n pega por exemplo)
+
+--> p1.style.color = 'purple'
+
+        * mudando a cor de p1, pelo DOM
+--------ID--------
+comando:
+getElemenstById()
+
+ --> PASSO 1 - cria a variavel, que vai receber esse id:
+        var d = window.document.getElementById('msg')
+                --> para estilizar podemos fazer:
+                        d.style.background = 'red'
+
+                        --> modificar por js usando dom:
+                                d.innerText = 'Estou aguardando...'
+                                -- aqui, a frase origina 'Clique em mim' do id 'msg', é trocada por 'estou aguardando'
+        
+                                -----OU------
+                        --> outro jeito de modificar (usado quando vai se fazer isso apenas 1 vez)
+                                window.document.getElementsById('msg)..innerText = 'Estou aguardando ...'
+--------NOME--------
+comando:
+getElementByName()
+
+--------CLASSE--------
+comando:
+getElementsByClassName
+
+--------SELETOR (css)-------- ****substitui todos os de cima****
+- singular 
+querySelector()
+
+        var d = window.document.querySelector('div#msg')
+                -->para estilizar a cor da letra:
+                        d.style.color = 'red'
+                -->para estilizar a cord de fundo da div
+                        d.style.background = 'blue'
+
+        -->se for para clsse:
+                var d = window.document.querySelector('div.msg')
+se no gtml for: usar, #, .  dentro do ()
+- div == #
+- class == .
+- plural 
+querySelectorAll()
+       var d = window.document.querySelector('div#msg')
+       //para estilizar a cor da letra:
+       d.style.color = 'red'
+       //para estilizar a cord de fundo da div
+       d.style.background = 'blue'
+       //se for para clsse:
+       //var d = window.document.querySelector('class.msg')

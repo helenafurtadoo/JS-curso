@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Começando com DOM</title>
+    <style>
+        body {
+            background: pink;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Iniciando estudos com DOM</h1>
+    <p>aqui vai o resultado</p>
+    <p>Aprendendo a usar <strong>DOM</strong> em JavaScript</p>
+    <div id="msg">Clique em mim</div>
+    <!--COMECANDO A TRABALHAR COM DOM:-->
+    <script>
+        /* window.document.write("Ola mundo") //adcionando componentes
+         window.document.write(window.document.charset) //mostra no site algumas configuracoes da pagina (ex:UTF-8) */
+/*
+        var p1 = window.document.getElementsByTagName('p')[1]  // seleciona o PRIMEIRO paragrafo 'p', ja que tem + de 1
+        window.document.write("Replicando a tag p1 :  " + p1.innerText) //retorna na tela, o texto de p1 (pega apenas o texto, se tiver strong do html, ele n pega por exemplo)
+        p1.style.color = 'purple' //mundando a cor de p1 pelo dom*/
+
+        /*
+        // com id
+        //prineiro, cria a variavel, que vai receber esse id:
+        var d = window.document.getElementById('msg')
+        // para estilizar podemos fazer:
+        d.style.background = 'red'
+        //modificar por js usando dom:
+        d.innerText = 'Estou aguardando...'
+        */
+       var d = window.document.querySelector('div#msg')
+       //para estilizar a cor da letra:
+       d.style.color = 'red'
+       //para estilizar a cord de fundo da div
+       d.style.background = 'blue'
+       //se for para clsse:
+       //var d = window.document.querySelector('class.msg')
+          
+    </script>
+</body>
+
+</html>
