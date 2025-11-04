@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando numeros</title>
+
+    <!--CSS-->
+    <style>
+        body {
+            font: normal 18pt Arial;
+        }
+
+        input {
+            font: normal 18pt Arial;
+            width: 100px;
+        }
+
+        div#res {
+            font: italic 20pt Arial;
+            margin-top: 20px;
+            color: white;
+            background: rgba(94, 124, 190, 0.753);
+            width: 350px;
+            /*largura*/
+            height: 300px;
+            /*altura*/
+            /*para alinhar o texto*/
+            line-height: 300px;
+            /*esse tem q ter o msm numero que height, para alinhar no meio*/
+            text-align: center;
+        }
+
+        .somar {
+            background: rgb(19, 156, 65);
+            color: white;
+            border: none;
+        }
+
+        .somar:hover {
+            background-color: rgb(133, 129, 129);
+        }
+
+        .limpar {
+            background: rgb(163, 37, 37);
+            color: white;
+            border: none;
+        }
+
+        .limpar:hover {
+            background-color: rgb(133, 129, 129);
+        }
+    </style>
+</head>
+<!--CSS-->
+
+<!--HTML-->
+
+<body>
+    <h1>Somando Valores!</h1>
+    <p>Digite dois números abaixo:</p>
+    <!--CRIANDO AS CAIXAS DE NUMERO E BOTAO SOMAR-->
+    <input type="number" name="txtn1" id="txtn1"> +
+    <input type="number" name="txtn2" id="txtn2">
+    <input type="button" class="somar" value="Somar" onclick="somar() ">
+    <input type="button" class="limpar" value="Limpar" onclick="limpar()">
+    <div id="res">Resultado</div>
+    <!--HTML-->
+
+    <!--SCRIPT-->
+    <script>
+
+        tn1 = document.getElementById('txtn1')          //usando getElement
+        tn2 = document.querySelector('input#txtn2')     //usando querySelector 
+        var res = document.getElementById('res')
+
+        //CRIANDO VARIAVEL QUE PUXA O VALOR DE TN1, TN2| TRANFORMANDO PARA NUMBER
+        var n1 = Number(tn1.value)
+
+        var n2 = Number(tn2.value)
+
+        //CRIANDO A FUNCAO SOMAR 
+        function somar() {
+
+
+            var soma = n1 + n2                          //variavel para somar
+
+            //para mostrar o resultado
+            res.innerHTML = `${soma}`
+            //para alrterar fundo dps de respondido
+            res.style.background = 'red'
+        }
+
+        function limpar() {
+            var limp = document.getElementById('res')
+            tn1.value = "" //limpar valores das caixas
+            tn2.value = ""
+
+
+
+            //voltar para o texto padrao
+            limp.innerText = "Resultado"
+
+            //voltar para o background padrao
+            limp.style.background = ''
+        }
+    </script>
+    <!--SCRIPT-->
+</body>
+
+</html>
