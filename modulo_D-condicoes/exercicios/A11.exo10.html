@@ -5,29 +5,98 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DETRAN</title>
-</head>
+<!--CSS-->
+    <style>
+        h1 {
+            color: rgba(91, 175, 91, 0.781);
+        }
 
+        .btn-verificar {
+            color: white;
+            background-color: rgb(0, 128, 64);
+            border: none;
+
+        }
+
+        .btn-verificar:hover {
+            background-color: rgb(102, 98, 98);
+        }
+
+        .resposta {
+            color: rgb(145, 141, 141);
+            font: normal 15pt Arial;
+             line-height: 15px;
+            /*esse tem q ter o msm numero que height, para alinhar no meio*/
+            text-align: left;
+              margin-top: 20px;
+        }
+
+        .btn-multa {
+
+        }
+
+    </style>
+<!--CSS--> 
+
+</head>
+<!--HTML-->
 <body>
     <h1>Sistema de multas</h1>
     Velocidade do carro: <input type="number" name="txtvel" id="txtvel"> Km/h
-    <input type="button" value="Verificar" onclick="calcular()">
-    <div id="res">
+    <input id="verificar" type="button" class="btn-verificar" value="Verificar" onclick="calcular()">
+    <input id="multar" type="button" class="btn-multa" value="Calcular valor da multa" onclick="multa()">
+    <div id="res" class="resposta">
 
     </div>
+<!--CSS-->
     <script>
+         var verificarM = document.getElementById('multar')
+         multar.style.dispaly = 'none';
+
         function calcular() {
             var txtv = document.getElementById('txtvel')
             var res = document.getElementById('res')
+           // var verificarM = document.getElementById('multar')
+            //multar.style.dispaly = 'none';
             //transofrmar valor para numero
             var vel = Number(txtv.value)
-            res.innerHTML = ` Sua velocidade atual é de ${vel} Km/h `
+            
+            if  (vel <= 0 ) {
+                multar.style.dispaly = 'none';
+                res.innerHTML = 'Você não colocou nenhuma velocidade. Por favor preencha o campo acima.'
+                 //multar.style.dispaly = 'none';
+                return;
+            }
             if (vel > 60) {
+                res.innerHTML = ` Sua velocidade atual é de ${vel} Km/h `
+
                 res.innerHTML += `<p>Você ultrapassou o limite de velocidade! Voce esta <strong>MULTADO</strong></p>`
             }
+          
             res.innerHTML += `<p>Dirija sempre com sinto de segurança!</p>` //so aparece dps que aperta verificar
+            
+            multa(vel, verificarM)
         }
+ 
+        function multa(vel, verificarM) {
+            if(!verificarM)
+             multar.style.dispaly = 'none';
+
+             return;
+             if (vel > 60) {
+            multar.style.display = 'inline-block';
+        } else {
+            multar.style.display = 'none';
+        }
+    }
+        
+
+
+
+        
     </script>
+<!--CSS-->
 
 </body>
-
+<!--HTML-->
 </html>

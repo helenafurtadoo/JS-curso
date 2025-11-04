@@ -4,12 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Somando numeros</title>
+    <title>Somador de valores</title>
 
     <!--CSS-->
     <style>
         body {
+            background-color: #FFF8D4;
             font: normal 18pt Arial;
+        }
+
+        h1 {
+            background: #4e5837;
+            color: white;
+            text-align: center;
+            width: 500px;
+
         }
 
         input {
@@ -17,12 +26,16 @@
             width: 100px;
         }
 
+        p {
+            color: rgb(117, 110, 110);
+        }
+
         div#res {
             font: italic 20pt Arial;
             margin-top: 20px;
             color: white;
-            background: rgba(94, 124, 190, 0.753);
-            width: 350px;
+            background: #A3B087;
+            width: 500px;
             /*largura*/
             height: 300px;
             /*altura*/
@@ -33,7 +46,7 @@
         }
 
         .somar {
-            background: rgb(19, 156, 65);
+            background: #313647;
             color: white;
             border: none;
         }
@@ -43,7 +56,7 @@
         }
 
         .limpar {
-            background: rgb(163, 37, 37);
+            background: #435663;
             color: white;
             border: none;
         }
@@ -58,8 +71,9 @@
 <!--HTML-->
 
 <body>
+
     <h1>Somando Valores!</h1>
-    <p>Digite dois números abaixo:</p>
+    <p>Digite dois números abaixo para obter a soma:</p>
     <!--CRIANDO AS CAIXAS DE NUMERO E BOTAO SOMAR-->
     <input type="number" name="txtn1" id="txtn1"> +
     <input type="number" name="txtn2" id="txtn2">
