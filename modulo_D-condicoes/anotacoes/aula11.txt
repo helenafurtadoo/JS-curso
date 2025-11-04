@@ -1,0 +1,28 @@
+- sequencias:
+var n = 3 --> cria variavel (n) de valor 3 (1°)
+n += 2 --> soma valor de (n) com 2 (2°)
+window.alert(n) --> mostra em uma janela de alerta o valor da variavel (n) == 5 (3°)
+
+------------CONDIÇÕES------------
+
+* if (condicao ) {
+    bloco (TRUE)
+}else {
+    bloco (FALSE)
+}
+
+
+--> tipos de condição
+ - condicao simples (1 tipo de bloco)
+
+  if (condicao ) {
+    bloco (TRUE)
+  }
+* se a condicao for falsa, nd aontece
+
+- condicao  composta (+1 bloco)
+ if (condicao ) {
+    bloco (TRUE)
+}else {
+    bloco (FALSE)
+}
