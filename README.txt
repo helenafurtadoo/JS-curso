@@ -25,7 +25,16 @@ modulo C --> Entendendo o DOM
 
 * Manipulando DOM
 
-modulo D -->
+modulo D --> Condições em JS
+* condicoes simples 
+
+* condicoes compostas
+
+* condicoes alinhadas 
+
+* condicoes multiplas 
+
+* exercicios propostos
 
 modulo E -->
 
