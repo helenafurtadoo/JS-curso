@@ -1,6 +1,7 @@
 body {
     background: pink;
-    font: normal 15pt Arial;
+    font-family:'Lucida Sans';
+    font-size: 15pt;
 
 }
 
@@ -12,16 +13,22 @@ header {
 
 section {
     background: white;
+    color: rgb(41, 38, 38);
     border-radius: 10px; /*deixar a borda mais arredondada*/
     padding: 15px; /*dar espaço entre o texto e a section*/
     width: 500px; /*largura fixa*/
     margin: auto; /*para deixar centralizado*/
-    box-shadow: 5px 5px 20px rgba(153, 59, 75, 0.986);
-    /* desclocamento lateral | deslocamento vertical | espalhamento | cor
+    box-shadow: 5px 5px 20px rgba(20, 20, 20, 0.445);
+    /* desclocamento lateral | deslocamento vertical | espalhamento | cor*/
 }
 
 footer {
     color: white;
     text-align: center; /*centraliar texto no centro*/
     font-style:italic;
+}
+
+div {
+    text-align: center;
+    padding: 5px;
 }
