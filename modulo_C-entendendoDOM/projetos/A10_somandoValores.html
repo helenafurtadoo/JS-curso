@@ -77,7 +77,7 @@
     <!--CRIANDO AS CAIXAS DE NUMERO E BOTAO SOMAR-->
     <input type="number" name="txtn1" id="txtn1"> +
     <input type="number" name="txtn2" id="txtn2">
-    <input type="button" class="somar" value="Somar" onclick="somar() ">
+    <input type="button" class="somar" value="Somar" onclick="somar()">
     <input type="button" class="limpar" value="Limpar" onclick="limpar()">
     <div id="res">Resultado</div>
     <!--HTML-->
@@ -89,21 +89,19 @@
         tn2 = document.querySelector('input#txtn2')     //usando querySelector 
         var res = document.getElementById('res')
 
-        //CRIANDO VARIAVEL QUE PUXA O VALOR DE TN1, TN2| TRANFORMANDO PARA NUMBER
-        var n1 = Number(tn1.value)
 
-        var n2 = Number(tn2.value)
 
         //CRIANDO A FUNCAO SOMAR 
         function somar() {
+            var n1 = Number(tn1.value.replace(',', '.'))
 
+            var n2 = Number(tn2.value.replace(',', '.'))
 
-            var soma = n1 + n2                          //variavel para somar
+            var soma = n1 + n2   //variavel para somar
 
-            //para mostrar o resultado
-            res.innerHTML = `${soma}`
-            //para alrterar fundo dps de respondido
-            res.style.background = 'red'
+            res.innerHTML = `${soma}`   //para mostrar o resultado
+
+            res.style.background = 'red'  //para alrterar fundo dps de respondido
         }
 
         function limpar() {
