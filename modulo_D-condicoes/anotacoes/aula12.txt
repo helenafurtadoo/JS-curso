@@ -1,0 +1,55 @@
+-------CONDICOES PARTE 2---------
+
+* condicoes aninhadas --> pega uma ocndicao composta, e coloca outras condicoes dentro dela
+(uma condicao dentro da outra)
+
+if (cond1) {
+    bloco 1
+ } else {
+    if (cond2){
+        bloco 2
+    } else {
+        bloco 3
+    }
+ }
+
+ --> para a cond 2 acontecer, a cond 1 precisa ser FALSA
+
+
+---> CONDICAO MULTIPLA
+
+-----COMO FUNCIONA---------
+Condição Múltipla (switch): É usada para executar um bloco de código específico com base no valor de uma única expressão. O código é executado uma vez e, em seguida, o fluxo do programa continua após a estrutura switch. É uma forma eficiente de substituir múltiplas condições
+
+* serve para valores fixos (util para valores fixos, e nao INTERVALOS)
+
+- switch (expressao) {
+    case valor 1 :
+
+        bloco 
+
+            break
+
+    case valor 2 :
+
+        bloco
+
+             break
+
+    case valor 3 :
+
+        bloco
+
+             break
+
+    default: 
+
+        bloco
+
+             break
+}
+
+--default - como se fosse o else do switch (se nenhuma das condicoes acima for atendida, default)
+
+-- para cada bloco, PRECISA tem um break
+

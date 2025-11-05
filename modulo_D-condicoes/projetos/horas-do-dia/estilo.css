@@ -1,0 +1,27 @@
+body {
+    background: pink;
+    font: normal 15pt Arial;
+
+}
+
+header {
+    color: white;
+    text-align: center; /*centraliar texto no centro*/
+
+}
+
+section {
+    background: white;
+    border-radius: 10px; /*deixar a borda mais arredondada*/
+    padding: 15px; /*dar espaço entre o texto e a section*/
+    width: 500px; /*largura fixa*/
+    margin: auto; /*para deixar centralizado*/
+    box-shadow: 5px 5px 20px rgba(153, 59, 75, 0.986);
+    /* desclocamento lateral | deslocamento vertical | espalhamento | cor
+}
+
+footer {
+    color: white;
+    text-align: center; /*centraliar texto no centro*/
+    font-style:italic;
+}
