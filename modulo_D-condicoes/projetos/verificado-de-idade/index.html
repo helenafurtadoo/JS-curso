@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de idade</title>
+    <link rel="stylesheet" href="/modulo_D-condicoes/projetos/verificado-de-idade/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Identificador de idades</h1>
+    </header>
+
+    <section>
+        <div>
+            <p> Ano de nascimento:
+                <input type="number" name="txt-ano" id="txt-ano" min="0">
+            </p>
+            <p>Sexo:
+                <input type="radio" name="radsex" id="mas" checked>
+                <label for="mas">Masculino</label>
+                <!--ambos os radios precisam ter o mesmo nome, p so poder marcar apenas 1 deles-->
+                <input type="radio" name="radsex" id="fem">
+                <label for="fem">Feminino</label>
+            </p>
+            <p>
+                <input type="button" value="Verificar" onclick="verificar()"
+            </p>
+        </div>
+
+        <div id="res">
+            Preencha os dados acima para ver o resultado!
+        </div>
+    </section>
+
+    <footer id="footer">
+        <small>&copy; 2025 [Helena Furtado]. Todos os direitos reservados.</small>
+    </footer>
+    <script src="/modulo_D-condicoes/projetos/verificado-de-idade/script.js"></script>
+</body>
+
+</html>
