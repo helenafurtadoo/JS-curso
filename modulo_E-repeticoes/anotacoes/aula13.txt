@@ -1,0 +1,16 @@
+-----ESTRUTRAS DE REPETIÇÕES (PARTE 1)----------
+
+1- estrutura de repetição com teste logico no inicio:
+* testa primeiro, executa depois
+
+while(condicao) {
+    executrar...
+}
+
+---> a partir do momento que for falsa, o bloco para de executar e sai
+
+2- estrutura de repeticao com teste logico no final
+
+do {
+    execute....
+} while (condicao)

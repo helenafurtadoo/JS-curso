@@ -36,6 +36,9 @@ modulo D --> Condições em JS
 
 * exercicios propostos
 
-modulo E -->
+modulo E --> repeticoes 
+* estrutura WHILE
+
+* estrutura DO WHILE
 
 modulo F -->

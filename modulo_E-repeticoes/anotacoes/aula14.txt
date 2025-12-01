@@ -1,0 +1,31 @@
+-------ESTRUTURAS DE REPETIÇÕES (PARTE 2)---------
+- exagono regular
+* inicializacao
+* teste logico
+    - Verdadeiro --> executa o bloco|volta para o inicio enquanto faz o incremento
+
+    - Falso --> vai para o objetivo final
+* incremento
+-----------------------------------------------|
+for (inicio ; teste ; incremento){             |
+                                               |  
+                                               |             
+}                                              | 
+-----------------------------------------------|
+* geralemente quando sabe o limite das execucoes
+exemplo:
+
+var c = 1
+while(c<= 5) {
+    console.log(`Passo ${c}`)
+    c++
+}
+-----------------------MESMA COISA QUE-----------------------
+
+for (var c=1 ; c<=5 ; c++){
+    console.log(`Passo ${c}`)
+}
+
+
+
+--> modo de depuração:
