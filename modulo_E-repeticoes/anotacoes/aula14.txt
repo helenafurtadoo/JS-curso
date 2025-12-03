@@ -29,3 +29,5 @@ for (var c=1 ; c<=5 ; c++){
 
 
 --> modo de depuração:
+executar o código passo a passo, monitorar o estado das variáveis e identificar/corrigir
+erros (bugs) de forma interativa, sem precisar executar o programa completo repetidas vezes
