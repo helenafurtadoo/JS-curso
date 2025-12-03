@@ -10,7 +10,7 @@ function contar() {
         res.innerHTML = 'Impossível contar'
         window.alert('[ERRO] Faltam dados!')
     } else {
-        resultado.innerHTML = 'Contando: <br>' //<br> para quebrar a linha entre 'contando' e o reusltado
+        resultado.innerHTML = 'Contando: <br>' //<br> para quebrar a linha entre "contando " e o resultado
 
         //convertendo os valores das variaveis para number:
         let i = Number(inicio.value)
